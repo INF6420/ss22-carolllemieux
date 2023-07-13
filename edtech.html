@@ -1,52 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="en" class="bkgr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title>Educational Technology</title>
-    <link href="styles.css" rel="stylesheet" />
 </head>
-<body>
-    <header width="100%">
-        <div>
-                 <img class="logo" src="images/logocl.png" alt="Logo overlapping CL Carol LeMieux's initials"">
+<body class="body">
+    <!--the page background color should be #eE9DEF6. The font-family is Tahoma, Areal, `helvetica, sans-serif.-->
+     <!--The <h1> style should be have color: #08014A and a Text Align center-->
+   <!--This section should use grid boxes. There should be six rows and 12 columns.-->
+    <header>
+       <!--The header consists of a <div> and <nav> element and will take up the first two rows.-->
+       <div>
+           <!--This section should have one row. The first <div> should be row one row. The <img src="images/logocl.png" should span columns 1 and 2. The banner should span columns 3 through 12-->
+            <img class="img-b logo-image" src="images/logocl.png" alt="Logo overlapping CL Carol LeMieux's initials">
+           <img class="img-b banner banner-image" src="images/office.jpg" alt="image of IT office">    
+           <!--The <h1> should overlap the row in this <div> It should be aligned to be in the top righ corner on top of the banner-->
+           <h1>Educational Technology</h1>
         </div>
-        <div>     
-            <h1 #index2 class="topright">Leadership in Educational Technologies</h1>
-     
-         </div>
-         <div class="position">
-        <nav>
-              <ul class="button-list a">
-                 <li><a href = "index.html">Home</a></li>
-                 <li><a href = "resume.html">Resumé</a></li>
-                 <li><a href = "mlis.html">MLIS</a></li>
-                 <li><a href = "edtech.html">Ed Tech</a></li>
-                 <li><a href = "testimonials.html">Testimonials</a></li>
-                 <li><a href = "contact-me.html">Contact</a></li>
-             </ul>  
-         </nav> 
-         </div>
-     </header>
-    <section>
+       <nav>
+            <!--The <nav> buttons should be in row 3. They should be stlyed as 6 buttons, Each button should span two columns. index.htm spans column 1-2, resume.html spans column 3-4, etc. The background color of the buttons is #08014A. The text color is#E9CBFF. The font size is 60%; text decoration:none,; border:none; Border-radius: 5px; Margin-right and margin-left 5 px. max-height:40px  -->
+                <!--The <nav> should also be styled with a drop down menu from the right corner for iphones-->
+             <ul  class="button-list">
+               <li ><a href = "index.html">Home</a></li>
+                <li><a href = "resume.html">Resumé</a></li>
+                <li><a href = "mlis.html">MLIS</a></li>
+                <li><a class ="active" href = "edtech.html">Ed Tech</a></li>
+                <li><a href = "testimonials.html">Testimonials</a></li>
+                <li><a href = "contact-me.html">Contact</a></li>
+            </ul>  
+        </nav> 
+    </header>
          <main>
-           <article>
-                5 columns in this row
-            </article>
-            <article>
-                Image and text
-            </article>
-            <article>
-                Image and text
-            </article>
-            <article>
-                Image and text
-            </article>
+             <!--Row 1 and 2 Certifications-->
+            
+                <div class="edr1c1sp12">
+                    <h1>Certificates</h1>
+                </div>
+                <div class="edr2c1sp2 cert-images">
+                <img src="images/AppleTeacher_white copy.png" width="90" alt="Apple teacher">
+                </div>
+                <div class="edr2c3sp2 cert-images">
+                    <img src="images/bronzeAmbassador.png" width="90%" alt="SMART Bronze Ambassador">
+                </div>
+                <div class="edr2c5sp2 cert-images">
+                    <img src="images/seesawBadge.png" width="90%"  alt="Seesaw Certified Educator">
+                </div>
+                <div class="edr2c7sp2 cert-images">
+                   <img src="images/lumioAmbassador.png" width="90%"  alt="Lumio Bronse Level Ambassador">
+                </div>
+                <div class="edr2c9sp2 cert-images">
+                    <img src="images/2022-2024-recognition-badge-educ.png" width="90%" alt="Common Sense Media Educator">
+                </div>
+                <div class="edr2c11sp2 cert-images">
+                    <img src="images/GCE_Badges_01.png" width="90%" alt="Google Certified Teacher">
+                </div>
+        
+             <!--Row 3-5 2 columns (span 4 and span 6)-->
+                <div class="edr3c1sp4 cert-images">
+                    <p>Coding playground comes to WBAIS. The conception of this playground was
+                         conceived by Melinda Alford and I during our time as integration and learning coaches at
+                          Suzhou Singapore International School. Coding stations: Cubix, Sphero 
+                          RVR+, Beebot, Mouse Robot, Osmo, Dash, Spike Essentials, Spike Prime and binary code bracelet.
+                    </p>
+                </div>
+                <div class="edr3c5sp8 cert-images">
+                     <img src="images/csweek.jpg" width="100%" alt="Computer Science Week">
+                </div>
+              
+                <div class="edr4c1sp4 cert-images">
+                   <p> Two in-house FIRST LEGO League competitions for a total of 25 FLL teams.
+                   </p>
+                </div>
+                <div class="edr4c5sp8 cert-images">
+                    <img src="images/inhousefll.jpg" width="100%" alt="Competition Day">
+                </div>
+                <div class="edr5c1sp4 cert-images row">
+                    <p>Design thinking is an important skill set in the 21st century. Creativity is unleashed in 
+                        the process of design. The students sit at tables with whiteboard material to allow brainstorming 
+                        during their design process. 
+                    </p>
+                </div>
+                <div class="edr5c5sp8 cert-images">
+                    <img src="images/design.jpeg" width="100%" alt="Design Class">
+                </div>
         </main>
-    </section>
-<footer>
-    <p> Updated: May 28, 2023. Copyright Carol LeMieux</p>
+<footer class="group">
+    <p> Updated: July 13, 2023. Copyright Carol LeMieux</p>
  </footer>
- 
 </body>
 </html>
