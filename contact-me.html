@@ -1,55 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bkgr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link href="styles.css" rel="stylesheet" />
 </head>
-<body>
-    <header width="100%">
-        <div>
-                 <img class="logo" src="images/logocl.png" alt="Logo overlapping CL Carol LeMieux's initials"">
+<body class="body">
+    <!--the page background color should be #eE9DEF6. The font-family is Tahoma, Areal, `helvetica, sans-serif.-->
+     <!--The <h1> style should be have color: #08014A and a Text Align center-->
+   <!--This section should use grid boxes. There should be six rows and 12 columns.-->
+    <header>
+       <!--The header consists of a <div> and <nav> element and will take up the first two rows.-->
+       <div>
+           <!--This section should have one row. The first <div> should be row one row. The <img src="images/logocl.png" should span columns 1 and 2. The banner should span columns 3 through 12-->
+            <img class="img-b logo-image" src="images/logocl.png" alt="Logo overlapping CL Carol LeMieux's initials">
+           <img class="img-b banner banner-image" src="images/office.jpg" alt="image of IT office">    
+           <!--The <h1> should overlap the row in this <div> It should be aligned to be in the top righ corner on top of the banner-->
+           <h1>Contact Me</h1>
         </div>
-        <div>     
-            <h1 #index2 class="topright">Contact Me</h1>
-     
-         </div>
-         <div class="position">
-        <nav>
-              <ul class="button-list a">
-                 <li><a href = "index.html">Home</a></li>
-                 <li><a href = "resume.html">Resumé</a></li>
-                 <li><a href = "mlis.html">MLIS</a></li>
-                 <li><a href = "edtech.html">Ed Tech</a></li>
-                 <li><a href = "testimonials.html">Testimonials</a></li>
-                 <li><a href = "contact-me.html">Contact</a></li>
-             </ul>  
-         </nav> 
-         </div>
-     </header>
-    <section>
+       <nav>
+            <!--The <nav> buttons should be in row 3. They should be stlyed as 6 buttons, Each button should span two columns. index.htm spans column 1-2, resume.html spans column 3-4, etc. The background color of the buttons is #08014A. The text color is#E9CBFF. The font size is 60%; text decoration:none,; border:none; Border-radius: 5px; Margin-right and margin-left 5 px. max-height:40px  -->
+                <!--The <nav> should also be styled with a drop down menu from the right corner for iphones-->
+             <ul  class="button-list">
+               <li ><a href = "index.html">Home</a></li>
+                <li><a href = "resume.html">Resumé</a></li>
+                <li><a href = "mlis.html">MLIS</a></li>
+                <li><a href = "edtech.html">Ed Tech</a></li>
+                <li><a href = "testimonials.html">Testimonials</a></li>
+                <li><a href = "contact-me.html">Contact</a></li>
+            </ul>  
+        </nav> 
+    </header>
         <main>
-           <div class="column1of3">
-                
-           </div>
-               <div class="column2of3">
-                <div class="column1of3>
-                    <h3>Twitter</h3>
-                </div>
-                <div class="column3of3"></div>
-            </div>
-            <div class="column3of3">
-                <div class="column1of3> <h3>Linkedin</h3></div>
-                <div class="column3of3"> <a class="twitter-timeline" data-width="220" data-height="200" data-theme="dark" href="https://twitter.com/carolllemieux?ref_src=twsrc%5Etfw">Tweets by carolllemieux</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-            </div>
+             <div class="conr1c1sp12">
+                <form action="https://formspree.io/f/xpzgznwl" method="post" class="validate">
+                <ul>
+                    <li>
+                      <label for="name">Name:</label>
+                      <input type="text" maxlength="20" name="name" class="form-input">
+                    </li>
+                    <li>
+                      <label for="email">Email:</label>
+                      <input type="email"  id="email" name="_replyto" class="form-input">
+                    </li>
+                    <li>
+                      <label for="message">Message:</label>
+                      <textarea id="message" requiered name="user_message" class="form-input" row="4" maxlength="144"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                      </li>
+                  </ul>
+                </form>
+              </div>
     
         </main>
   
-<footer>
-    <p> Updated: May 28, 2023. Copyright Carol LeMieux</p>
- </footer>
- </section>
+        <footer class="footer-wrapper group">
+            <!--footer should span columns 1-12. It should be in row 1 of the footer.-->
+           <p> Updated: June 27, 2023. Copyright Carol LeMieux</p>
+       </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+      
